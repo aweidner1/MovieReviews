@@ -1,0 +1,50 @@
+﻿@model MovieReviews.Review
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Review Details</h2>
+
+<div>
+    <h4>Review</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateReviewed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateReviewed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Movy.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Movy.Title)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
